@@ -1,8 +1,8 @@
 # React + Vite
+Це стенд для роботи з іншим моїм репозиторієм https://github.com/santabelsDV/CRUD.
+![img.png](Coment/img.png)
+Покищо реалізував виведення каталогу :)
+![img_1.png](Coment/img_1.png)
+Потім додам роботу з книгами та вже в процесі реєстрація та вхід 
+(  ̳• · • ̳)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
