@@ -1,0 +1,125 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 0em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+
+.read-the-docs {
+  color: #888;
+}
+
+/*sad*/
+/* Header.css */
+.header {
+  background-color: #1e1e1e; /* Темний фон, щоб відповідати стилю сторінки */
+  border-bottom: 1px solid #333; /* Легка межа для розділення */
+  padding: 0rem 0rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.logo-container .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; /* Білий текст для контрасту */
+  text-decoration: none;
+  transition: color 300ms;
+  /*border: #000000 1px solid;*/
+}
+
+.logo-container .logo:hover {
+  color: #646cff; /* Акцентний колір при наведенні */
+}
+
+.nav {
+  flex-grow: 1;
+  margin-left: 2rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ddd; /* Світло-сірий текст */
+  font-size: 1rem;
+  transition: color 200ms;
+}
+
+.nav-link:hover {
+  color: #fafafa; /* Акцентний колір при наведенні */
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #646cff;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #646cff;
+  cursor: pointer;
+  transition: background-color 200ms, color 200ms;
+}
+
+.btn:hover {
+  background-color: #646cff;
+  color: #fff;
+}
