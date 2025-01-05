@@ -12,13 +12,14 @@ export default function Catalog() {
             try {
                 setIsLoading(true);
                 setError(null);
+                const token = localStorage.getItem("token");
 
                 const response = await fetch(
                     `http://localhost:3333/books?page=${currentPage}&limit=4`,
                     {
                         method: 'GET',
                         headers: {
-                            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwiZmlyc3ROYW1lIjoiU2FzZGFzIiwibGFzdE5hbWUiOiJhc2Rhc2Rhc2QiLCJsb2dpbiI6ImFzZGFzZGFzZCIsImVtYWlsIjoiYWl0ZW1peDlAZ21haWwuY29tIiwicm9sbGUiOiJ1c2VyIiwiaWF0IjoxNzM1MTMyNjkzLCJleHAiOjE3MzUxMzM1OTN9.9xdYB-VNy-ySO3Pnr6kKvE1IPeeSnM_z53TOTZWvMVo',
+                            'Authorization': 'Bearer ' + token,
                             'Content-Type': 'application/json',
                         },
                     }

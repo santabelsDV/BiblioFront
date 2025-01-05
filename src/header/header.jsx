@@ -23,7 +23,9 @@ export default function Header() {
                     </ul>
                 </nav>
                 <div className="auth-buttons">
-                    <button className="btn login-btn">Login</button>
+                    <a href="/login">
+                        <button className="btn login-btn">Login</button>
+                    </a>
                     <button className="btn signup-btn">Sign Up</button>
                 </div>
             </div>
